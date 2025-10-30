@@ -1,7 +1,4 @@
 
-
-// handling middleware by help of promise
-
 const asyncHandler = (requestHandler) => {
     (req, res, next) => {
         Promise.resolve(requestHandler(req, res, next)).
@@ -22,7 +19,6 @@ const asyncHandler = (requestHandler) => {
 
 
 
-// handling middleware by help of try and catch
 
     // const asyncHandler = () => {}
     // const asyncHandler = (func) => () => {}
